@@ -1,14 +1,25 @@
-//
-//  main.cpp
-//  tablice dwuwymiarowe Lista zadań 2 - powtórkowe
-//
-//  Created by Jakub Wtorkiewicz on 17/11/2021.
-//
-
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+void zadaniepierwsze()
+{
+    int tab[3][5]={0};
+    for (int i=0; i<3; i++) {
+        for(int j=0; j<5; j++)
+        {
+            tab[i][j]=i+j;
+            cout << tab[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
+
+int main() {
+    
+    
+    zadaniepierwsze();
+    
+    
     return 0;
 }
