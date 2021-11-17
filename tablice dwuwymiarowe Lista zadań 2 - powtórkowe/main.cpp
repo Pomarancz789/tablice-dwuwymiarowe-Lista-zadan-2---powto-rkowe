@@ -1,4 +1,6 @@
 #include <iostream>
+#include<cstdio>
+#include<cstdlib>
 using namespace std;
 
 void wypisz(int tab[3][5])
@@ -33,6 +35,39 @@ void wywalwiersze(int tab[3][5], int wiersz)
     }
 }
 
+int sasiedzi(int tab[6][6], int w, int k)
+{
+    int sumasasiadow=0;
+    
+    sumasasiadow+=tab[w][k];
+    if () {
+        <#statements#>
+    }
+    
+    return sumasasiadow;
+}
+
+
+void zadaniedrugie()
+{
+    int tab1[6][6]={0};
+    int tab2[6][6]={0};
+    srand(time(NULL));
+    
+    for (int i=0; i<6; i++)
+    {
+        for (int j=0; j<6; j++) {
+            tab1[i][j]=-10+rand()%(10+10+1);
+        }
+    }
+    
+    for (int i=0; i<6; i++)
+    {
+        for (int j=0; j<6; j++) {
+            tab2[i][j]=sasiedzi(tab1,i,j);
+        }
+    }
+}
 
 
 int main() {
@@ -46,7 +81,13 @@ int main() {
     }
     //zadanie pierwsze
     
-    wypisz(tab);
-    wywalwiersze(tab, 1);
+    //wypisz(tab);
+    
+    //int wiersz=0;
+    //cout << "Podaj wiersz do wywalenia " << endl;
+    //cin >>wiersz;
+    //wywalwiersze(tab, wiersz-1);
+    zadaniedrugie();
+    
     return 0;
 }
